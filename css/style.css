@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 26%;
+    margin: 3px 3px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list {
+    width: 70%;
+    /* background-color:black; */
+    display: flex;
+    align-items: center;
+}
+
+.rightNav {
+    /* background-color: aquamarine; */
+    width: 30%;
+    text-align: right;
+    padding: 0px 10px;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 20px 20px
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+#search {
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('../img/bg3.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 75%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 75%;
+    margin: auto
+}
+
+.firstSection {
+    height: 100vh;
+}
+
+.secondHalf{
+    width: 145px;
+}
+
+.secondHalf img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.text-big {
+    font-size: 32px;
+    padding: 10px 0px;
+}
+
+.text-small {
+    font-size: 13px;
+    margin: 0px 2px;
+}
+
+.credit{
+    text-align: right;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.btn {
+    padding: 4px 8px;
+    /* margin: 3px 1px; */
+    margin-right: 3px;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 15px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-sm {
+    padding: 4px 10px;
+    vertical-align: middle;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    max-width: 80%;
+    justify-content: space-evenly;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.paras {
+    padding: 0px 60px;
+}
+
+.section-left {
+    flex-direction: row-reverse;
+}
+
+.sectionSubTag {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img {
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.contact {
+    background-color: #f6f5f4;
+    height: 120vh;
+}
+
+.text-center {
+    text-align: center;
+    padding-top: 70px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+
+.form {
+    max-width: 62%;
+    margin: 20px auto;
+}
+
+.form-input {
+    width: 98%;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 12px 2px;
+    padding: 4px 4px;
+}
+
+.btn-dark {
+    color: black;
+    border: 2px solid grey;
+}
+
+.text-footer {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.burger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+
+/* This part can also be moved to a separate CSS sheet */
+
+@media only screen and (max-width: 920px) {
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 360px;
+    }
+
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .secondHalf img {
+        width: 70%;
+        border-radius: 120px;
+    }
+
+    .rightNav {
+        text-align: center;
+    }
+
+    #search {
+        width: 90%;
+    }
+
+    .btn-sm {
+        margin: 3px 0px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav-resp {
+        height: 64px;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+    }
+
+    .section {
+        flex-direction: column-reverse;
+        height: 100%;
+        margin-bottom: 40px;
+    }
+
+    .text-small {
+        text-align: justify;
+    }
+
+    .text-big {
+        text-align: center;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+    .contact {
+        height: auto;
+    }
+
+    .paras {
+        padding: 0px 0px;
+    }
+
+    .form {
+        padding: 20px 0px;
+        margin: 0px auto;
+    }
+}
